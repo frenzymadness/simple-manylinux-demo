@@ -19,7 +19,7 @@ If you are interested in one platform only, run:
 
 ```
 PLAT=manylinux2014_x86_64
-podman run --rm -e PLAT=$PLAT -v `pwd`:/io quay.io/pypa/manylinux$PLAT /io/build-wheels.sh
+podman run --rm -e PLAT=$PLAT -v `pwd`:/io quay.io/pypa/$PLAT /io/build-wheels.sh
 ```
 
 and the wheels appear in `./wheelhouse/$PLAT`.
