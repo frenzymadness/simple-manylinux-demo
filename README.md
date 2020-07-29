@@ -22,7 +22,7 @@ PLAT=manylinux2014_x86_64
 podman run --rm -e PLAT=$PLAT -v `pwd`:/io quay.io/pypa/$PLAT /io/build-wheels.sh
 ```
 
-and the wheels appear in `./wheelhouse/$PLAT`.
+and the wheels appear in `./wheelhouse/$PLAT`. If SELinux stops you, add `--security-opt label=disable`.
 
 ## License
 
