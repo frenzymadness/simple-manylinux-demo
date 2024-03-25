@@ -7,7 +7,7 @@ extension_module = Extension(
 
 setup(
     name = 'simple-manylinux-demo',
-    version = '2.0',
+    version = '3.0',
     author = "Lumír Balhar",
     author_email = "frenzy.madness@gmail.com",
     url = "https://github.com/frenzymadness/simple-manylinux-demo",
